@@ -1,0 +1,31 @@
+package prjVetores;
+ 
+import java.util.Scanner;
+ 
+public class exercicio06 {
+ public static void main(String[] args) {
+   Scanner ler = new Scanner(System.in) ;
+
+ 
+  int a[], cont, s, potencia;
+ 
+  a = new int[11];
+ 
+  potencia = 1;
+ 
+  System.out.println("--- Vetor A (Pot ncias de 2) ---");
+ 
+  for (cont = 0; cont < 11; cont++) {
+ 
+   a[cont] = potencia;
+ 
+   s = cont + 1;
+ 
+   System.out.println(s + "  (A[" + cont + "]) = " + a[cont]);
+ 
+   potencia = potencia * 2;
+  }
+ 
+  ler.close();
+ }
+}

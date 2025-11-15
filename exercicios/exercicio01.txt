@@ -1,0 +1,49 @@
+package prjVetores;
+
+import java.util.Scanner;
+
+public class exercicio01 {
+
+  public static void main(String[] args) {
+
+        Scanner ler = new Scanner(System.in);
+
+        final int TAM=5;
+      int i;
+      int j = 0;
+        int A[] = new int[TAM];
+        int B[] = new int[TAM];
+
+        for (i = 0; i < TAM; i++) {
+          System.out.println("Digite 5 números inteiros :");
+            A[i] = ler.nextInt();
+        }
+
+        for (i = 0; i < TAM; i++) {
+           if (A[i] %2 == 0) {
+             B[j] = A[i];
+             j++;
+            }
+        }
+
+
+        for (i = 0; i < TAM; i++) {
+            if (A[i] %2 != 0) {
+              B[j] = A[i];
+              j++;
+
+            }
+        }
+
+        System.out.print("pares primeiro e impares depois: ");
+
+        for (i = 0; i < TAM; i++) {
+            System.out.print(B[i] + " ");
+        }
+
+    }
+
+
+  }
+
+ 

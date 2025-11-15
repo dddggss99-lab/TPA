@@ -1,0 +1,53 @@
+package prjVetores;
+
+import java.util.Scanner;
+
+public class exercicio03 {
+
+ public static void main(String[] args) {
+     Scanner ler = new Scanner(System.in);
+         
+         final int TAM=5;
+      int i;
+      int j ;
+      int x ;
+         int A[] = new int[TAM];
+         int B[] = new int[TAM];
+       
+         
+         for (i = 0; i < TAM; i++) {
+          System.out.println("Digite 5 números inteiros :");
+             A[i] = ler.nextInt();
+             
+         }
+         
+         System.out.println("Primos :");
+         for (i = 0; i < TAM; i++) {
+            x = 0;
+            for (j=1; j < A[i]; j++) {
+                if (A[i] % j == 0) {
+                x++;
+            }
+          } 
+          if (x == 2) {
+           System.out.print( A[i]);
+          }
+       }
+         
+         System.out.println("\nNPrimos :");
+         for (i = 0; i < TAM; i++) {
+           x = 0;
+            for (j=1; j < A[i]; j++) {
+                if (A[i] % j == 0) {
+                x++;
+            }
+          } 
+          if (x != 2) {
+           System.out.print(A[i]);
+          }
+       }
+         
+ }
+
+}
+ 
